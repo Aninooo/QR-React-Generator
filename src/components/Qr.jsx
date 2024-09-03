@@ -15,7 +15,7 @@ return(
 <>
 <div className="input-btn">
     <input onChange={(e) => setInput(e.target.value)} type="text" name="generate" placeholder="Enter you value" />
-<button disabled={input && input.trim() !== "" ? false : true} onClick={handleGenerateQrCode}>Generate Qr</button>
+<button className="btn" disabled={input && input.trim() !== "" ? false : true} onClick={handleGenerateQrCode}>Generate Qr</button>
 </div>
 <div>
     <QRCode

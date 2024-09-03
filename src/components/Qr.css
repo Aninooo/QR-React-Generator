@@ -1,8 +1,27 @@
 .qr{
-
+border: 1px #1A1A1A;
+border-color: 1px;
 }
 .input-btn{
     margin-bottom: 50px;
     display: center;
     justify-content: center;
+}
+input{
+    height: 30px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+.btn{
+    background-color: #1a1a1a70;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 8);
+}
+input::placeholder {
+  color: white;
+  padding-left: 10px;
 }
