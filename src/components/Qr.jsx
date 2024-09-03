@@ -15,16 +15,16 @@ function Qr() {
         const qrElement = document.getElementById('qr-code-value');
         toPng(qrElement)
             .then((dataUrl) => {
-                if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                    const newWindow = window.open();
-                    newWindow.document.write(`<img src="${dataUrl}" />`);
-                    newWindow.document.title = "QR Code";
-                } else {
-                    const link = document.createElement('a');
-                    link.href = dataUrl;
-                    link.download = 'qr-code.png';
-                    link.click();
-                }
+                const link = document.createElement('a');
+                link.href = dataUrl;
+                link.download = 'qr-code.png';
+
+                link.style.display = 'none';
+                document.body.appendChild(link);
+
+                link.click();
+
+                document.body.removeChild(link);
             })
             .catch((err) => {
                 console.error('Failed to capture screenshot:', err);
