@@ -1,10 +1,19 @@
+.title1{
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+.title2{
+    color: black;
+    font-size: 30px;
+}
 .qr{
     border: 10px solid #52545455;
     width: 256px;
     height: 256px;
 }
 .input-btn{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: center;
     justify-content: center;
 }
@@ -17,7 +26,7 @@ input{
 .btn{
     background-color: #1a1a1a70;
     color: white;
-    padding: 8px;
+    padding: 9px;
     border-radius: 0px 5px 5px 0px;
 }
 .btn:hover{
@@ -37,6 +46,18 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
+.screenshot-btn:hover{
+    background-color: rgba(201, 194, 194, 0.52);
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    right: 0px;
+    left: 0px;
+    color: black;
+}
 @media only screen and (max-width: 768px){
 
     *{
@@ -44,5 +65,20 @@ input::placeholder {
     }
     input{
         color: black;
+    }
+    .screenshot-container{
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+    .screenshot-btn{
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+        border: 2px solid rgba(9, 9, 9, 0.296);
+        
     }
 }
