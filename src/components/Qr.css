@@ -1,6 +1,7 @@
 .qr{
-border: 1px #1A1A1A;
-border-color: 1px;
+    border: 10px solid #52545455;
+    width: 256px;
+    height: 256px;
 }
 .input-btn{
     margin-bottom: 50px;
