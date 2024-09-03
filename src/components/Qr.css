@@ -4,7 +4,7 @@ justify-content: center;
 margin-bottom: 20px;
 }
 .title2{
-    color: black;
+    color: white;
     font-size: 30px;
 }
 .qr{
@@ -57,7 +57,7 @@ input::placeholder {
     top: 100px;
     right: 0px;
     left: 0px;
-    color: black;
+    color: white;
 }
 @media only screen and (max-width: 768px){
 
@@ -81,5 +81,12 @@ input::placeholder {
         background-color: white;
         border: 2px solid rgba(9, 9, 9, 0.296);
         
+    }
+    .title2{
+        color: black;
+    }
+    .footer{
+        color: black;
+        margin-bottom: 100px;
     }
 }
