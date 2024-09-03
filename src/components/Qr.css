@@ -27,6 +27,16 @@ input::placeholder {
   color: white;
   padding-left: 10px;
 }
+.screenshot-container{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.screenshot-btn{
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 768px){
 
     *{

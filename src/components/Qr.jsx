@@ -23,6 +23,10 @@ return(
     />
 </div>
 
+<div className="screenshot-container">
+    <button className="screenshot-btn">Screenshot me Ugh</button>
+</div>
+
 </>
 );
 }
