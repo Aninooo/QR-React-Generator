@@ -15,16 +15,23 @@ function Qr() {
         const qrElement = document.getElementById('qr-code-value');
         toPng(qrElement)
             .then((dataUrl) => {
-                const link = document.createElement('a');
-                link.href = dataUrl;
-                link.download = 'qr-code.png';
+                fetch(dataUrl)
+                    .then(res => res.blob())
+                    .then(blob => {
 
-                link.style.display = 'none';
-                document.body.appendChild(link);
+                        const url = URL.createObjectURL(blob);
 
-                link.click();
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.download = 'qr-code.png';
 
-                document.body.removeChild(link);
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+
+                        URL.revokeObjectURL(url);
+                    })
+                    .catch(err => console.error('Failed to create Blob:', err));
             })
             .catch((err) => {
                 console.error('Failed to capture screenshot:', err);
