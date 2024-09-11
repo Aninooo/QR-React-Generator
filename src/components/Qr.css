@@ -17,6 +17,7 @@ margin-bottom: 20px;
     margin-bottom: 20px;
     display: center;
     justify-content: center;
+    
 }
 input{
     height: 30px;
@@ -29,6 +30,7 @@ input{
     color: white;
     padding: 9px;
     border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
 }
 .btn:hover{
     background-color: rgba(0, 0, 0, 8);

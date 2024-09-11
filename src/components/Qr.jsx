@@ -48,7 +48,6 @@ function Qr() {
                     onChange={(e) => setInput(e.target.value)} 
                     type="text" 
                     name="generate" 
-                    placeholder="Enter your value" 
                 />
                 <button 
                     className="btn" 
