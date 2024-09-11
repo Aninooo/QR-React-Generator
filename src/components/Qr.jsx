@@ -73,7 +73,7 @@ function Qr() {
 
             <div>
                 <footer>
-                    <p className="footer">Made By: Bryan pogi</p>
+                    <p className="footer">Made By: Anino</p>
                 </footer>
             </div>
         </>
