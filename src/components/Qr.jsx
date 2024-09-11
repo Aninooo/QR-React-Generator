@@ -68,7 +68,7 @@ function Qr() {
                 <button 
                     className="screenshot-btn" 
                     onClick={handleScreenshot}>
-                    Screenshot me Ugh
+                    Screenshot me 
                 </button>
             </div>
 
