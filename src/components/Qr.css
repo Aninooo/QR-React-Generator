@@ -58,12 +58,12 @@ input::placeholder {
     background-color: rgba(201, 194, 194, 0.52);
 }
 .footer{
+    padding-top: 200px;
+    max-height: 200px;
+    min-width: 200px;
     position: relative;
     display: flex;
     justify-content: center;
-    top: 100px;
-    right: 0px;
-    left: 0px;
     color: white;
 }
 @media only screen and (max-width: 768px){
